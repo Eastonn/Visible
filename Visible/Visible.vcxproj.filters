@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\csx">
+      <UniqueIdentifier>{0e5f9211-34ab-4361-bb0a-17dde02bd3a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\csx\xor_string">
+      <UniqueIdentifier>{526c57db-c876-43a3-934c-dfa67726f4c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{dccde9de-2c3d-4529-8b2c-368629711e36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\sdk">
+      <UniqueIdentifier>{7e1d8d22-4731-4b50-b6c2-816ec5584641}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csx\CSX_Memory.cpp">
+      <Filter>Source Files\csx</Filter>
+    </ClCompile>
+    <ClCompile Include="csx\CSX_Utils.cpp">
+      <Filter>Source Files\csx</Filter>
+    </ClCompile>
+    <ClCompile Include="csx\CSX_Log.cpp">
+      <Filter>Source Files\csx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dllmain.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="csx\xor_string\MetaRandom.h">
+      <Filter>Source Files\csx\xor_string</Filter>
+    </ClInclude>
+    <ClInclude Include="csx\xor_string\MetaString4.h">
+      <Filter>Source Files\csx\xor_string</Filter>
+    </ClInclude>
+    <ClInclude Include="csx\xor_string\Indexes.h">
+      <Filter>Source Files\csx\xor_string</Filter>
+    </ClInclude>
+    <ClInclude Include="csx\xor_string\Inline.h">
+      <Filter>Source Files\csx\xor_string</Filter>
+    </ClInclude>
+    <ClInclude Include="csx\CSX_Memory.h">
+      <Filter>Source Files\csx</Filter>
+    </ClInclude>
+    <ClInclude Include="csx\CSX_Utils.h">
+      <Filter>Source Files\csx</Filter>
+    </ClInclude>
+    <ClInclude Include="csx\CSX_Log.h">
+      <Filter>Source Files\csx</Filter>
+    </ClInclude>
+    <ClInclude Include="csx\CSX_Engine.h">
+      <Filter>Source Files\csx</Filter>
+    </ClInclude>
+    <ClInclude Include="vmt.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\CParticleSystemMgr.h">
+      <Filter>Source Files\core\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\IAppSystem.h">
+      <Filter>Source Files\core\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\IVPanel.h">
+      <Filter>Source Files\core\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\CEntityInstance.h">
+      <Filter>Source Files\core\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\CGameEntitySystem.h">
+      <Filter>Source Files\core\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="core\interfaces.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\proxy.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\IVGuiPaintSurface.h">
+      <Filter>Source Files\core\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\CFontManager.h">
+      <Filter>Source Files\core\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\ICvar.h">
+      <Filter>Source Files\core\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\Convar.h">
+      <Filter>Source Files\core\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\vector.h">
+      <Filter>Source Files\core\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\color.h">
+      <Filter>Source Files\core\sdk</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
