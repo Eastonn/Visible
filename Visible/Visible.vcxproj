@@ -194,6 +194,7 @@
     <ClInclude Include="csx\xor_string\MetaRandom.h" />
     <ClInclude Include="csx\xor_string\MetaString4.h" />
     <ClInclude Include="dllmain.h" />
+    <ClInclude Include="MinHook.h" />
     <ClInclude Include="vmt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

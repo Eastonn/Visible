@@ -102,5 +102,8 @@
     <ClInclude Include="core\sdk\color.h">
       <Filter>Source Files\core\sdk</Filter>
     </ClInclude>
+    <ClInclude Include="MinHook.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

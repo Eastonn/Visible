@@ -34,22 +34,22 @@ DWORD WINAPI OnDllAttach(const PVOID base)
 
 	AddLog("[+] Cheat Injected\n");
 	
-	GetModules();
+	/*GetModules();*/
 
 	AddLog("[+] Got Modules \n");
 
-	entity_vmt = new VMT(entity);
-	entity_vmt->HookVMT(OnAddEntity, 14);
-	entity_vmt->HookVMT(OnRemoveEntity, 15);
-	entity_vmt->ApplyVMT(entity);
+	//entity_vmt = new VMT(entity);
+	//entity_vmt->HookVMT(OnAddEntity, 14);
+	//entity_vmt->HookVMT(OnRemoveEntity, 15);
+	//entity_vmt->ApplyVMT(entity);
 
-	panel_vmt = new VMT(panel);
-	panel_vmt->HookVMT(PaintTraverse, 55);
-	panel_vmt->ApplyVMT(panel);
+	//panel_vmt = new VMT(panel);
+	//panel_vmt->HookVMT(PaintTraverse, 55);
+	//panel_vmt->ApplyVMT(panel);
 
-	particle_mgr_vmt = new VMT(particle_mgr);
-	particle_mgr_vmt->HookVMT(CreateParticleCollection, 17);
-	particle_mgr_vmt->ApplyVMT(particle_mgr);
+	//particle_mgr_vmt = new VMT(particle_mgr);
+	//particle_mgr_vmt->HookVMT(CreateParticleCollection, 17);
+	//particle_mgr_vmt->ApplyVMT(particle_mgr);
 
 	AddLog("[+] Initialized Hooks \n");
 
