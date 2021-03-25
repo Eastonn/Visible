@@ -26,8 +26,7 @@ CEntityInstance* OnAddEntity(CGameEntitySystem* ecx, CEntityInstance* ptr, Entit
 		auto alreadyExists = false;
 		for (auto hero : heroes)
 		{
-			if (typeName == hero->SchemaDynamicBinding()->bindingName)
-				//prevent adding illusions by checking for duplicates
+			if (typeName == hero->SchemaDynamicBinding()->bindingName) //prevent adding illusions by checking for duplicates
 			{
 				alreadyExists = true;
 				break;
@@ -37,7 +36,6 @@ CEntityInstance* OnAddEntity(CGameEntitySystem* ecx, CEntityInstance* ptr, Entit
 		if (!alreadyExists)
 		{
 			heroes.push_back(ptr);
-			//printf("Adding %s\n", typeName);
 		}
 	}
 
@@ -55,7 +53,6 @@ CEntityInstance* OnRemoveEntity(CGameEntitySystem* ecx, CEntityInstance* ptr, En
 			if (heroes[i] == ptr)
 			{
 				heroes.erase(heroes.begin() + i);
-				//	printf("Removing %s\n", typeName);
 				break;
 			}
 		}
@@ -91,7 +88,7 @@ void* CreateParticleCollection(CParticleSystemMgr* thisptr,
 void PaintTraverse(IVPanel* ecx, IVGuiPaintSurface* surface, VPANEL vpanel, bool force_repaint, bool allow_force)
 {
 	panel_vmt->GetOriginalMethod(PaintTraverse)(ecx, surface, vpanel, force_repaint, allow_force);
-
+	
 	/*
 	surface->PushMakeCurrent(vpanel, false
 	surface->DrawSetColor(0, 255, 0, 255);
@@ -99,12 +96,11 @@ void PaintTraverse(IVPanel* ecx, IVGuiPaintSurface* surface, VPANEL vpanel, bool
 	surface->PopMakeCurrent(vpanel);
 	*/
 	
-	for (const auto hero : heroes)
+	/*for (const auto hero : heroes)
 	{
 		if (hero->CanBeSeenByTeam(DOTA_TEAM_RADIANT) && hero->CanBeSeenByTeam(DOTA_TEAM_DIRE))
 			hero->DrawEntityDebugOverlays(ABSBOX);
-	}
-
+	}*/
 }
 
 void SetRenderingEnabled(void* thisptr, bool state)
